@@ -1,0 +1,9 @@
+FROM ethereum/client-go:v1.12.0
+
+RUN apk update && apk add --update rsync bash
+
+COPY ./.ethereum /root/.ethereum
+
+RUN geth --datadir /root/.ethereum init /root/.ethereum/genesis.json
+
+VOLUME ["/root/.ethereum"]

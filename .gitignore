@@ -1,0 +1,9 @@
+# caches
+volume/
+
+# logs
+*.out
+*.log
+
+# add
+.env
