@@ -40,6 +40,7 @@ EXTIP=
 `docker compose up -d --build`
 
 ### ipc
+`docker exec -it geth bash`
 `geth attach /root/.ethereum/geth.ipc`
 ```
 admin.addPeer("enode://aaaaa....30303?discport=0")
